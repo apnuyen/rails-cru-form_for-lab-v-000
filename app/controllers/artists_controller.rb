@@ -14,16 +14,16 @@ class ArtistsController < ApplicationController
     @artist = Artist.find(params[:id])
   end
 
-  def new 
-    @artist = Artist.new 
-  end 
+  def new
+    @artist = Artist.new
+  end
 
-  def edit 
+  def edit
     @artist = Artist.find(params[:id])
-  end 
+  end
 
-  private 
+  private
   def post_params(*args)
     params.require(:artist).permit(*args)
-  end 
+  end
 end
