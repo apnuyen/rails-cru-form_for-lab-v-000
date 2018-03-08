@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'artists/create'
+
+  get 'artists/update'
+
+  get 'artists/show'
+
   get 'songs/create'
 
   get 'songs/update'
