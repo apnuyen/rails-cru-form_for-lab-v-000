@@ -1,13 +1,13 @@
 class Genre < ActiveRecord::Base
   has_many :songs
-  
-    def create 
-    end 
+
+    def create
+    end
 
     def update
-    end 
+    end
 
-    def show 
-    end 
-    
+    def show
+    end
+
 end
