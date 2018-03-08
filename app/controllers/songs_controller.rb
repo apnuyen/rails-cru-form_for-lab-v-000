@@ -1,4 +1,8 @@
 class SongsController < ApplicationController
+  def index 
+    @songs = Song.all 
+  end 
+
   def create
     @song = Song.create!(post_params(:name, :artist_id, :genre_id))
     redirect_to song_path(@song)
